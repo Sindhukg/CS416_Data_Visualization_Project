@@ -40,7 +40,7 @@ function casesCountry(){
     if (data===0){
     d3.csv('./data/scene3.csv')
         .then(loadedData => {
-            data = loadedData;
+            let data = loadedData;
             data.forEach(d => {
                 d.country = d.continent + ',' + d.country;
                 d.cases = +d.cases;
