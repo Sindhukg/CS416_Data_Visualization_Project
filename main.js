@@ -8,7 +8,7 @@ var data = 0;
 function loadCountryData(){
 
     if (data===0){
-        d3.csv('/data/scene3.csv')
+        d3.csv('./data/scene3.csv')
             .then(loadedData => {
                 data = loadedData;
                 data.forEach(d => {
